@@ -80,12 +80,22 @@ struct ColorSliderView: View {
 
 struct ColorTextFieldView: View {
     @Binding var dataTextField: Double
+    @State private var showAlert = false
     
     var body: some View {
         TextField("", value: $dataTextField, formatter: NumberFormatter())
+            .onSubmit {
+                guard dataTextField >= 256 else { return }
+                showAlert.toggle()
+            }
             .textFieldStyle(.roundedBorder)
             .frame(width: 50)
             .multilineTextAlignment(.trailing)
+            .alert("Wrong Number!!!", isPresented: $showAlert) {
+                Button("OK") {
+                    dataTextField = 0
+                }
+            }
     }
 }
 
