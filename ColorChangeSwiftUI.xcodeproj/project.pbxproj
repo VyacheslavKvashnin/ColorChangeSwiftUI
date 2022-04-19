@@ -11,6 +11,8 @@
 		BD47CAFD280EAAFA005E85C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD47CAFC280EAAFA005E85C8 /* ContentView.swift */; };
 		BD47CAFF280EAAFB005E85C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD47CAFE280EAAFB005E85C8 /* Assets.xcassets */; };
 		BD47CB02280EAAFB005E85C8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD47CB01280EAAFB005E85C8 /* Preview Assets.xcassets */; };
+		BD47CB09280F39DC005E85C8 /* RoundedRectangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD47CB08280F39DC005E85C8 /* RoundedRectangleView.swift */; };
+		BD47CB0B280F3C7A005E85C8 /* ColorTextLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD47CB0A280F3C7A005E85C8 /* ColorTextLabelView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		BD47CAFC280EAAFA005E85C8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BD47CAFE280EAAFB005E85C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD47CB01280EAAFB005E85C8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BD47CB08280F39DC005E85C8 /* RoundedRectangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedRectangleView.swift; sourceTree = "<group>"; };
+		BD47CB0A280F3C7A005E85C8 /* ColorTextLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTextLabelView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				BD47CAFA280EAAFA005E85C8 /* ColorChangeSwiftUIApp.swift */,
 				BD47CAFC280EAAFA005E85C8 /* ContentView.swift */,
+				BD47CB0A280F3C7A005E85C8 /* ColorTextLabelView.swift */,
+				BD47CB08280F39DC005E85C8 /* RoundedRectangleView.swift */,
 				BD47CAFE280EAAFB005E85C8 /* Assets.xcassets */,
 				BD47CB00280EAAFB005E85C8 /* Preview Content */,
 			);
@@ -138,6 +144,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD47CAFD280EAAFA005E85C8 /* ContentView.swift in Sources */,
+				BD47CB09280F39DC005E85C8 /* RoundedRectangleView.swift in Sources */,
+				BD47CB0B280F3C7A005E85C8 /* ColorTextLabelView.swift in Sources */,
 				BD47CAFB280EAAFA005E85C8 /* ColorChangeSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

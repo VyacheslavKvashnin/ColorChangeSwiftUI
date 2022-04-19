@@ -28,11 +28,11 @@ struct ContentView: View {
                     greenColor: greenColor
                 )
                
-                ColorSliderView(color: $redColor, dataTextField: $redColor)
+                ColorSliderView(color: $redColor, dataTextField: $redColor, dataTextLabel: redColor)
                     .tint(.red)
-                ColorSliderView(color: $blueColor, dataTextField: $blueColor)
+                ColorSliderView(color: $blueColor, dataTextField: $blueColor, dataTextLabel: blueColor)
                     .tint(.blue)
-                ColorSliderView(color: $greenColor, dataTextField: $greenColor)
+                ColorSliderView(color: $greenColor, dataTextField: $greenColor, dataTextLabel: greenColor)
                     .tint(.green)
                 
                 Spacer()
@@ -63,34 +63,30 @@ struct ColorSliderView: View {
     @Binding var color: Double
     @Binding var dataTextField: Double
     
+    let dataTextLabel: Double
+    
     var body: some View {
         HStack {
-            Text("\(lround(dataTextField))")
-                .frame(width: 40)
-                .foregroundColor(.white)
+            ColorTextLabelView(dataTextLabel: dataTextLabel)
                 
             Slider(value: $color, in: 0...255)
                 
-            TextField("", value: $dataTextField, formatter: NumberFormatter())
-                .textFieldStyle(.roundedBorder)
-                .frame(width: 50)
-                .multilineTextAlignment(.trailing)
+            ColorTextFieldView(dataTextField: $dataTextField)
         }
         .padding()
     }
 }
 
-struct RoundedRectangleView: View {
-    
-    let redColor: Double
-    let blueColor: Double
-    let greenColor: Double
+
+struct ColorTextFieldView: View {
+    @Binding var dataTextField: Double
     
     var body: some View {
-        RoundedRectangle(cornerRadius: 30)
-            .fill(Color(red: redColor / 255, green: greenColor / 255, blue: blueColor / 255))
-            .frame(width: 300, height: 200)
-            .overlay(RoundedRectangle(cornerRadius: 30).stroke(.white, lineWidth: 3))
-            .padding([.top, .bottom], 20)
+        TextField("", value: $dataTextField, formatter: NumberFormatter())
+            .textFieldStyle(.roundedBorder)
+            .frame(width: 50)
+            .multilineTextAlignment(.trailing)
     }
 }
+
+
