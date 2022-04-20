@@ -27,16 +27,12 @@ struct ContentView: View {
                     blueColor: blueColor,
                     greenColor: greenColor
                 )
-               
-                ColorSliderView(color: $redColor, dataTextField: $redColor, dataTextLabel: redColor)
-                    .tint(.red)
-                ColorSliderView(color: $blueColor, dataTextField: $blueColor, dataTextLabel: blueColor)
-                    .tint(.blue)
-                ColorSliderView(color: $greenColor, dataTextField: $greenColor, dataTextLabel: greenColor)
-                    .tint(.green)
+                
+                ColorSliderGroupView(dataTextField: $redColor, tintColor: .red)
+                ColorSliderGroupView(dataTextField: $blueColor, tintColor: .blue)
+                ColorSliderGroupView(dataTextField: $greenColor, tintColor: .green)
                 
                 Spacer()
-                
             }
             .keyboardType(.numberPad)
             .focused($focusedField)
@@ -57,46 +53,3 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
-
-struct ColorSliderView: View {
-    
-    @Binding var color: Double
-    @Binding var dataTextField: Double
-    
-    let dataTextLabel: Double
-    
-    var body: some View {
-        HStack {
-            ColorTextLabelView(dataTextLabel: dataTextLabel)
-                
-            Slider(value: $color, in: 0...255)
-                
-            ColorTextFieldView(dataTextField: $dataTextField)
-        }
-        .padding()
-    }
-}
-
-
-struct ColorTextFieldView: View {
-    @Binding var dataTextField: Double
-    @State private var showAlert = false
-    
-    var body: some View {
-        TextField("", value: $dataTextField, formatter: NumberFormatter())
-            .onSubmit {
-                guard dataTextField >= 256 else { return }
-                showAlert.toggle()
-            }
-            .textFieldStyle(.roundedBorder)
-            .frame(width: 50)
-            .multilineTextAlignment(.trailing)
-            .alert("Wrong Number!!!", isPresented: $showAlert) {
-                Button("OK") {
-                    dataTextField = 0
-                }
-            }
-    }
-}
-
-

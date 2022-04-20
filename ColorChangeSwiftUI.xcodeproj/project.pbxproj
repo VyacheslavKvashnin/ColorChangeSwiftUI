@@ -13,6 +13,9 @@
 		BD47CB02280EAAFB005E85C8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD47CB01280EAAFB005E85C8 /* Preview Assets.xcassets */; };
 		BD47CB09280F39DC005E85C8 /* RoundedRectangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD47CB08280F39DC005E85C8 /* RoundedRectangleView.swift */; };
 		BD47CB0B280F3C7A005E85C8 /* ColorTextLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD47CB0A280F3C7A005E85C8 /* ColorTextLabelView.swift */; };
+		BD9849242810232600DFC5C8 /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9849232810232600DFC5C8 /* SliderView.swift */; };
+		BD9849262810243B00DFC5C8 /* ColorSliderGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9849252810243B00DFC5C8 /* ColorSliderGroupView.swift */; };
+		BD9849282810247400DFC5C8 /* ColorTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9849272810247400DFC5C8 /* ColorTextFieldView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,9 @@
 		BD47CB01280EAAFB005E85C8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BD47CB08280F39DC005E85C8 /* RoundedRectangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedRectangleView.swift; sourceTree = "<group>"; };
 		BD47CB0A280F3C7A005E85C8 /* ColorTextLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTextLabelView.swift; sourceTree = "<group>"; };
+		BD9849232810232600DFC5C8 /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
+		BD9849252810243B00DFC5C8 /* ColorSliderGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSliderGroupView.swift; sourceTree = "<group>"; };
+		BD9849272810247400DFC5C8 /* ColorTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTextFieldView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,9 @@
 				BD47CAFA280EAAFA005E85C8 /* ColorChangeSwiftUIApp.swift */,
 				BD47CAFC280EAAFA005E85C8 /* ContentView.swift */,
 				BD47CB0A280F3C7A005E85C8 /* ColorTextLabelView.swift */,
+				BD9849272810247400DFC5C8 /* ColorTextFieldView.swift */,
+				BD9849252810243B00DFC5C8 /* ColorSliderGroupView.swift */,
+				BD9849232810232600DFC5C8 /* SliderView.swift */,
 				BD47CB08280F39DC005E85C8 /* RoundedRectangleView.swift */,
 				BD47CAFE280EAAFB005E85C8 /* Assets.xcassets */,
 				BD47CB00280EAAFB005E85C8 /* Preview Content */,
@@ -146,7 +155,10 @@
 				BD47CAFD280EAAFA005E85C8 /* ContentView.swift in Sources */,
 				BD47CB09280F39DC005E85C8 /* RoundedRectangleView.swift in Sources */,
 				BD47CB0B280F3C7A005E85C8 /* ColorTextLabelView.swift in Sources */,
+				BD9849262810243B00DFC5C8 /* ColorSliderGroupView.swift in Sources */,
 				BD47CAFB280EAAFA005E85C8 /* ColorChangeSwiftUIApp.swift in Sources */,
+				BD9849282810247400DFC5C8 /* ColorTextFieldView.swift in Sources */,
+				BD9849242810232600DFC5C8 /* SliderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
